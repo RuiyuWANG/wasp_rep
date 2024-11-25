@@ -1,0 +1,18 @@
+## Model
+weight_decay: 1e-4
+sigma: 1.0
+input_dim: 784
+latent_dim: 10
+
+## training
+batch_size: 128
+lr: 0.0001
+epochs: 200
+grad_penalty: 100.0
+inner_loss: 1.0
+divers_loss: 1.0
+save_every: 50
+save_dir: './running_results'
+
+# Distillation
+n_distill: 10000
