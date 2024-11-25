@@ -1,0 +1,15 @@
+Epoch [1/200], Loss: 226331.5011, Test Accuracy: 12.15%
+Epoch [2/200], Loss: 51145.2782, Test Accuracy: 13.39%
+Epoch [3/200], Loss: 15609.8818, Test Accuracy: 14.84%
+Traceback (most recent call last):
+  File "/home/x_shuji/wasp_rep/distill.py", line 149, in <module>
+    def VAE_loss(reconstructed, original, mu, logvar):
+  File "/home/x_shuji/wasp_rep/distill.py", line 92, in train
+    loss.backward()
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

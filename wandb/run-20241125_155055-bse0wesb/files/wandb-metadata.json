@@ -1,0 +1,97 @@
+{
+  "os":  "Linux-4.18.0-553.22.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python":  "3.9.20",
+  "startedAt":  "2024-11-25T14:50:55.325491Z",
+  "args":  [
+    "-m",
+    "vae"
+  ],
+  "program":  "/home/x_shuji/wasp_rep/distill.py",
+  "codePath":  "distill.py",
+  "git":  {
+    "remote":  "https://github.com/RuiyuWANG/wasp_rep.git",
+    "commit":  "f7968d24f69df195ea63811e08bbb60c18d21e38"
+  },
+  "email":  "shutong.jin1999@gmail.com",
+  "root":  "/home/x_shuji/wasp_rep",
+  "host":  "node009",
+  "username":  "x_shuji",
+  "executable":  "/home/x_shuji/.conda/envs/vot/bin/python",
+  "codePathLocal":  "distill.py",
+  "cpu_count":  128,
+  "cpu_count_logical":  256,
+  "gpu":  "[NVIDIA A100-SXM4-40GB]",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "31317663744",
+      "used":  "15655591936"
+    }
+  },
+  "memory":  {
+    "total":  "1081973055488"
+  },
+  "cpu":  {
+    "count":  128,
+    "countLogical":  256
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-40GB",
+      "memoryTotal":  "42949672960",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    }
+  ],
+  "slurm":  {
+    "cluster_name":  "berzelius",
+    "conf":  "/etc/slurm/slurm.conf",
+    "cpus_on_node":  "16",
+    "gpus":  "1",
+    "gpus_on_node":  "1",
+    "gtids":  "0",
+    "job_account":  "berzelius-2024-286",
+    "job_cpus_per_node":  "16",
+    "job_end_time":  "1732559465",
+    "job_gid":  "12918",
+    "job_gpus":  "4",
+    "job_id":  "12537440",
+    "job_name":  "interactive",
+    "job_nodelist":  "node009",
+    "job_num_nodes":  "1",
+    "job_partition":  "berzelius",
+    "job_qos":  "normal",
+    "job_start_time":  "1732530661",
+    "job_uid":  "12918",
+    "job_user":  "x_shuji",
+    "jobid":  "12537440",
+    "launch_node_ipaddr":  "10.81.254.11",
+    "localid":  "0",
+    "mpi_type":  "none",
+    "nnodes":  "1",
+    "nodeid":  "0",
+    "nodelist":  "node009",
+    "prio_process":  "0",
+    "procid":  "0",
+    "pty_port":  "36015",
+    "pty_win_col":  "164",
+    "pty_win_row":  "36",
+    "script_context":  "prolog_task",
+    "srun_comm_host":  "10.81.254.11",
+    "srun_comm_port":  "41441",
+    "step_id":  "4294967290",
+    "step_launcher_port":  "41441",
+    "step_nodelist":  "node009",
+    "step_num_nodes":  "1",
+    "step_num_tasks":  "1",
+    "step_tasks_per_node":  "1",
+    "stepid":  "4294967290",
+    "submit_dir":  "/home/x_shuji/WASP_LR-main",
+    "submit_host":  "berzelius1.nsc.liu.se",
+    "task_pid":  "3771884",
+    "tasks_per_node":  "16",
+    "topology_addr":  "node009",
+    "topology_addr_pattern":  "node"
+  },
+  "cudaVersion":  "12.2"
+}

@@ -1,0 +1,13 @@
+{"time":"2024-11-25T15:50:55.327541287+01:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-11-25T15:50:55.327891452+01:00","level":"INFO","msg":"created symlink","path":"/home/x_shuji/wasp_rep/wandb/run-20241125_155055-bse0wesb/logs/debug-core.log"}
+{"time":"2024-11-25T15:50:55.330131193+01:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-11-25T15:50:55.354466885+01:00","level":"INFO","msg":"created new stream","id":"bse0wesb"}
+{"time":"2024-11-25T15:50:55.354512601+01:00","level":"INFO","msg":"stream: started","id":"bse0wesb"}
+{"time":"2024-11-25T15:50:55.354544753+01:00","level":"INFO","msg":"sender: started","stream_id":{"value":"bse0wesb"}}
+{"time":"2024-11-25T15:50:55.354549772+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"bse0wesb"}}
+{"time":"2024-11-25T15:50:55.354534653+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"bse0wesb"}}
+{"time":"2024-11-25T15:50:55.681834738+01:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-11-25T15:50:55.684050904+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T15:53:38.356424559+01:00","level":"INFO","msg":"stream: closing","id":"bse0wesb"}
+{"time":"2024-11-25T15:53:38.356482189+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T15:53:38.361192338+01:00","level":"INFO","msg":"Stopped system monitor"}

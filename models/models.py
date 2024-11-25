@@ -18,6 +18,59 @@ class ModelAE(nn.Module):
 
     def forward(self, Xs):
         return F.relu(Xs @ self.W + self.b) @ self.W.T + self.a / self.sigma
+    
+class ModelVAE(nn.Module):
+    def __init__(self, dim_in, dim_latent, dim_out, weight_decay=1e-4, sigma=1.0):
+        super(ModelVAE, self).__init__()
+        # VAE encoder and decoder architecture
+        self.W = nn.Parameter(torch.empty(dim_in, dim_latent).uniform_(-np.sqrt(6.0 / (dim_in + dim_latent)),
+                                                                           np.sqrt(6.0 / (dim_in + dim_latent))))
+        self.b = nn.Parameter(torch.zeros(dim_latent))
+        
+        self.W_mu = nn.Parameter(torch.empty(dim_latent, dim_latent).uniform_(-np.sqrt(6.0 / dim_latent),
+                                                                              np.sqrt(6.0 / dim_latent)))
+        self.b_mu = nn.Parameter(torch.zeros(dim_latent))
+        
+        self.W_logvar = nn.Parameter(torch.empty(dim_latent, dim_latent).uniform_(-np.sqrt(6.0 / dim_latent),
+                                                                                  np.sqrt(6.0 / dim_latent)))
+        self.b_logvar = nn.Parameter(torch.zeros(dim_latent))
+        
+        self.W_dec = nn.Parameter(torch.empty(dim_latent, dim_out).uniform_(-np.sqrt(6.0 / (dim_latent + dim_out)),
+                                                                            np.sqrt(6.0 / (dim_latent + dim_out))))
+        self.b_dec = nn.Parameter(torch.zeros(dim_out))
+        
+        self.sigma = sigma
+        self.weight_decay = weight_decay
+
+    def encode(self, Xs):
+        hidden = F.relu(Xs @ self.W + self.b)
+        mu = hidden @ self.W_mu + self.b_mu
+        logvar = hidden @ self.W_logvar + self.b_logvar
+        return mu, logvar
+
+    def reparameterize(self, mu, logvar):
+        std = torch.exp(0.5 * logvar)
+        eps = torch.randn_like(std)
+        return mu + eps * std
+
+    def decode(self, z):
+        return F.relu(z @ self.W_dec + self.b_dec)
+
+    def forward(self, Xs):
+        mu, logvar = self.encode(Xs)
+        z = self.reparameterize(mu, logvar)
+        reconstruction = self.decode(z)
+        return reconstruction, mu, logvar
+
+    def loss_function(self, recon_X, X, mu, logvar):
+        # Reconstruction loss
+        recon_loss = F.mse_loss(recon_X, X, reduction='sum')
+        # KL divergence
+        kl_div = -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
+        return recon_loss + kl_div + self.weight_decay * (self.W.norm() + self.W_dec.norm())
+
+
+
 
 # Define the Model_Head (Classification Head)
 class ModelHead(nn.Module):
@@ -74,7 +127,10 @@ def penalizer_fn(u):
 def penalizer_term(m_base, Xs_distill):
     # Manually calculate the gradient for the penalizer term
     Xs_distill.requires_grad = True
-    out = m_base(Xs_distill)
+    if isinstance(m_base, ModelVAE):
+        out, _, _ = m_base(Xs_distill)
+    else:
+        out= m_base(Xs_distill)
     grad_outputs = torch.ones_like(out)
     gradients = torch.autograd.grad(outputs=out, inputs=Xs_distill,
                                     grad_outputs=grad_outputs, create_graph=True)[0]

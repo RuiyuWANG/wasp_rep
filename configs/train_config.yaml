@@ -1,8 +1,11 @@
 ## Model
 weight_decay: 1e-4
 sigma: 1.0
-input_dim: 784
-latent_dim: 10
+ae_input_dim: 784
+ae_latent_dim: 10
+vae_input_dim: 784
+vae_latent_dim: 10
+vae_output_dim: 784
 
 ## training
 batch_size: 128
