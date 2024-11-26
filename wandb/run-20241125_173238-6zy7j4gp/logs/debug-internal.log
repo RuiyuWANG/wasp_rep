@@ -1,0 +1,20 @@
+{"time":"2024-11-25T17:32:38.964624113+01:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-11-25T17:32:38.981536739+01:00","level":"INFO","msg":"created symlink","path":"/home/x_shuji/wasp_rep/wandb/run-20241125_173238-6zy7j4gp/logs/debug-core.log"}
+{"time":"2024-11-25T17:32:38.983507957+01:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-11-25T17:32:38.995836283+01:00","level":"INFO","msg":"created new stream","id":"6zy7j4gp"}
+{"time":"2024-11-25T17:32:38.996921977+01:00","level":"INFO","msg":"stream: started","id":"6zy7j4gp"}
+{"time":"2024-11-25T17:32:38.996938037+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6zy7j4gp"}}
+{"time":"2024-11-25T17:32:38.996956773+01:00","level":"INFO","msg":"sender: started","stream_id":{"value":"6zy7j4gp"}}
+{"time":"2024-11-25T17:32:38.996987972+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6zy7j4gp"}}
+{"time":"2024-11-25T17:32:39.232989671+01:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-11-25T17:32:39.234544973+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T19:18:24.829503733+01:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/shutong-jin1999/vae-ae-training/6zy7j4gp/file_stream"}
+{"time":"2024-11-25T19:19:24.483149454+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-11-25T20:30:24.95626193+01:00","level":"INFO","msg":"stream: closing","id":"6zy7j4gp"}
+{"time":"2024-11-25T20:30:24.95684855+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T20:30:24.963680523+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-25T20:30:26.797760463+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-25T20:30:27.040953777+01:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"6zy7j4gp"}}
+{"time":"2024-11-25T20:30:27.04117742+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"6zy7j4gp"}}
+{"time":"2024-11-25T20:30:27.040953186+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"6zy7j4gp"}}
+{"time":"2024-11-25T20:30:27.041677065+01:00","level":"INFO","msg":"stream: closed","id":"6zy7j4gp"}

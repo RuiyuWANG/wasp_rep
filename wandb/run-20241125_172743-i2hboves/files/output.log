@@ -1,0 +1,6 @@
+Epoch [1/200], Loss: 13300.1928, Test Accuracy: 8.97%
+Epoch [2/200], Loss: 239.2662, Test Accuracy: 9.02%
+Epoch [3/200], Loss: 73.7492, Test Accuracy: 8.91%
+Epoch [4/200], Loss: 68.6724, Test Accuracy: 8.79%
+Epoch [5/200], Loss: 68.2143, Test Accuracy: 8.71%
+Epoch [6/200], Loss: 69.3897, Test Accuracy: 8.74%

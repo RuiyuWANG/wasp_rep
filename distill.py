@@ -155,5 +155,6 @@ def VAE_loss(reconstructed, original, mu, logvar):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-m', '--model', type=str, default='ae')  # option that takes a value
+    parser.add_argument('-c', '--config', type=str, default='./configs/train_config.yaml')  # option that takes a value
     args = parser.parse_args()
-    train(args, config_path='./configs/train_config.yaml')
+    train(args, config_path=args.config)

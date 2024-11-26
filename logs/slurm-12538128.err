@@ -48,3 +48,4 @@ wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run misty-frost-4
 wandb: ⭐️ View project at https://wandb.ai/shutong-jin1999/vae-ae-training
 wandb: 🚀 View run at https://wandb.ai/shutong-jin1999/vae-ae-training/runs/4e9ikfcw
+slurmstepd: error: *** JOB 12538128 ON node042 CANCELLED AT 2024-11-25T17:11:05 ***

@@ -1,0 +1,26 @@
+Epoch [1/200], Loss: 21050.3387, Test Accuracy: 10.85%
+Epoch [2/200], Loss: 379.7300, Test Accuracy: 11.28%
+Epoch [3/200], Loss: 86.3592, Test Accuracy: 11.58%
+Epoch [4/200], Loss: 67.8017, Test Accuracy: 12.01%
+Epoch [5/200], Loss: 67.5982, Test Accuracy: 12.20%
+Epoch [6/200], Loss: 68.3041, Test Accuracy: 12.48%
+Epoch [7/200], Loss: 68.7120, Test Accuracy: 12.69%
+Epoch [8/200], Loss: 68.8445, Test Accuracy: 12.93%
+Traceback (most recent call last):
+  File "/home/x_shuji/wasp_rep/distill.py", line 160, in <module>
+    train(args, config_path=args.config)
+  File "/home/x_shuji/wasp_rep/distill.py", line 69, in train
+    for xs_tr, ys_tr in train_loader:
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torchvision/datasets/mnist.py", line 142, in __getitem__
+    img = Image.fromarray(img.numpy(), mode="L")
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/PIL/Image.py", line 3219, in fromarray
+    def fromarray(obj: SupportsArrayInterface, mode: str | None = None) -> Image:
+KeyboardInterrupt

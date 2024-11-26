@@ -1,0 +1,51 @@
+*************************************************************
+*************************************************************
+You have loaded a module for Anaconda Free edition.
+These modules are DEPRECATED for license reasons (see below).
+*************************************************************
+*************************************************************
+
+The Anaconda Python distribution license terms were updated on
+March 31, 2024 in a way that we interpret as restricting also
+general noncommercial use of Anaconda "Free edition" in organizations
+with more than 200 employees.
+
+To help users avoid possible licensing issues, we have deprecated
+the Anaconda/<version> modules and now direct users to the
+compatible community-provided software in our modules named:
+
+  Mambaforge/<version>
+
+These modules behave very similar to the Anaconda modules. Upon
+loading the module, you can access the 'conda' command, allowing
+you to interact with your existing Anaconda environments like before.
+**You do not need to rebuild your existing Anaconda environments**.
+
+One practical difference is that the Mambaforge tools are configured
+to only use the "conda-forge" channel for packages by default. However,
+this is rarely a problem for typical use.
+
+For questions related to our Anaconda and Mambaforge modules,
+please email: berzelius-support@nsc.liu.se
+
+---------------------------------------------------------------------------------------------------
+NOTE: We strongly advice against placing 'conda activate' (with or without
+arguments)
+      in your shell initialization files, (e.g. '.bashrc' or '.bash_profile')
+since this
+      severly alters the environment for running software in ways that cause
+unpredictable
+      issues that can be difficult to diagnose.
+---------------------------------------------------------------------------------------------------
+
+/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/proj/cloudrobotics-nest/users/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: shutong-jin1999. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.3
+wandb: Run data is saved locally in /home/x_shuji/wasp_rep/wandb/run-20241125_172743-i2hboves
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run distinctive-glade-6
+wandb: ⭐️ View project at https://wandb.ai/shutong-jin1999/vae-ae-training
+wandb: 🚀 View run at https://wandb.ai/shutong-jin1999/vae-ae-training/runs/i2hboves
+slurmstepd: error: *** JOB 12538261 ON node018 CANCELLED AT 2024-11-25T17:29:12 ***

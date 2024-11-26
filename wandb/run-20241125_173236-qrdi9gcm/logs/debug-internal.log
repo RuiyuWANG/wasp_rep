@@ -1,0 +1,18 @@
+{"time":"2024-11-25T17:32:36.772504675+01:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-11-25T17:32:36.772657666+01:00","level":"INFO","msg":"created symlink","path":"/home/x_shuji/wasp_rep/wandb/run-20241125_173236-qrdi9gcm/logs/debug-core.log"}
+{"time":"2024-11-25T17:32:36.774539777+01:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-11-25T17:32:36.787746319+01:00","level":"INFO","msg":"created new stream","id":"qrdi9gcm"}
+{"time":"2024-11-25T17:32:36.790871213+01:00","level":"INFO","msg":"stream: started","id":"qrdi9gcm"}
+{"time":"2024-11-25T17:32:36.790896521+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"qrdi9gcm"}}
+{"time":"2024-11-25T17:32:36.79089079+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"qrdi9gcm"}}
+{"time":"2024-11-25T17:32:36.790916179+01:00","level":"INFO","msg":"sender: started","stream_id":{"value":"qrdi9gcm"}}
+{"time":"2024-11-25T17:32:37.072408515+01:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-11-25T17:32:37.074199973+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T20:36:24.919983989+01:00","level":"INFO","msg":"stream: closing","id":"qrdi9gcm"}
+{"time":"2024-11-25T20:36:24.920092225+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T20:36:24.92446906+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-25T20:36:26.485683836+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-25T20:36:26.688062343+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"qrdi9gcm"}}
+{"time":"2024-11-25T20:36:26.688103571+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"qrdi9gcm"}}
+{"time":"2024-11-25T20:36:26.688117778+01:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"qrdi9gcm"}}
+{"time":"2024-11-25T20:36:26.688375278+01:00","level":"INFO","msg":"stream: closed","id":"qrdi9gcm"}

@@ -1,0 +1,20 @@
+Epoch [1/200], Loss: 571716.3607, Test Accuracy: 16.01%
+Epoch [2/200], Loss: 419475.7669, Test Accuracy: 16.31%
+Epoch [3/200], Loss: 334773.7770, Test Accuracy: 16.41%
+Epoch [4/200], Loss: 280096.2037, Test Accuracy: 16.54%
+Epoch [5/200], Loss: 241028.4587, Test Accuracy: 17.07%
+Epoch [6/200], Loss: 211634.3792, Test Accuracy: 16.74%
+Epoch [7/200], Loss: 188059.9266, Test Accuracy: 16.55%
+Epoch [8/200], Loss: 169058.8938, Test Accuracy: 16.85%
+Traceback (most recent call last):
+  File "/home/x_shuji/wasp_rep/distill.py", line 160, in <module>
+    train(args, config_path=args.config)
+  File "/home/x_shuji/wasp_rep/distill.py", line 92, in train
+    loss.backward()
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/x_shuji/.conda/envs/vot/lib/python3.9/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

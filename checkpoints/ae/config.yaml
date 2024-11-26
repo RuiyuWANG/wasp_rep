@@ -1,0 +1,16 @@
+ae_input_dim: 784
+ae_latent_dim: 10
+batch_size: 128
+divers_loss: 1.0
+epochs: 200
+grad_penalty: 100.0
+inner_loss: 1.0
+lr: 0.0001
+n_distill: 10000
+save_dir: ./checkpoints/ae
+save_every: 50
+sigma: 1.0
+vae_input_dim: 784
+vae_latent_dim: 10
+vae_output_dim: 784
+weight_decay: 1e-4

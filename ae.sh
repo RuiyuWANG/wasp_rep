@@ -11,4 +11,4 @@
 module load Anaconda/2023.09-0-hpc1-bdist
 conda activate vot
 
-python distill.py -m ae
+python distill.py -m ae -c ./configs/train_config_ae.yaml

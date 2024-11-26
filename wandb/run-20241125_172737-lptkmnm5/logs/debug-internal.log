@@ -1,0 +1,10 @@
+{"time":"2024-11-25T17:27:37.295956173+01:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-11-25T17:27:37.296104233+01:00","level":"INFO","msg":"created symlink","path":"/home/x_shuji/wasp_rep/wandb/run-20241125_172737-lptkmnm5/logs/debug-core.log"}
+{"time":"2024-11-25T17:27:37.298176562+01:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-11-25T17:27:37.321234155+01:00","level":"INFO","msg":"created new stream","id":"lptkmnm5"}
+{"time":"2024-11-25T17:27:37.321304127+01:00","level":"INFO","msg":"stream: started","id":"lptkmnm5"}
+{"time":"2024-11-25T17:27:37.32133692+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"lptkmnm5"}}
+{"time":"2024-11-25T17:27:37.321327071+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"lptkmnm5"}}
+{"time":"2024-11-25T17:27:37.321345305+01:00","level":"INFO","msg":"sender: started","stream_id":{"value":"lptkmnm5"}}
+{"time":"2024-11-25T17:27:37.662975312+01:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-11-25T17:27:37.664569016+01:00","level":"INFO","msg":"Starting system monitor"}
